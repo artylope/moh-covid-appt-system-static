@@ -1,0 +1,1 @@
+# moh-covid-appt-system-static
