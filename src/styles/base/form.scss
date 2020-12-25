@@ -1,0 +1,110 @@
+.input-group {
+  margin-bottom: 2rem;
+
+  label {
+    font-weight: 500;
+    color: $palette-trueGray-700;
+  }
+
+  .caption {
+    margin-bottom: 0.25em;
+    color: $palette-trueGray-500;
+  }
+
+  .validation {
+  }
+
+  input {
+  }
+}
+
+.input-group-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  input[type="password"],
+  input[type="text"],
+  input[number],
+  select {
+    margin-right: 0.2em;
+  }
+}
+
+input[type="password"],
+input[type="text"],
+input[number],
+select {
+  width: 100%;
+  // border: 1px solid $palette-trueGray-200;
+  border: 1px solid $palette-trueGray-200;
+  // background: $palette-trueGray-100;
+  color: $palette-trueGray-900;
+  margin: 0;
+  // padding: .5em .5em;
+  text-decoration: none;
+  border-radius: $base-border-radius;
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $palette-indigo-400;
+    border-radius: $base-border-radius;
+  }
+
+  &::-webkit-input-placeholder {
+    /* Edge */
+    color: $palette-trueGray-500;
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $palette-trueGray-500;
+  }
+
+  &::placeholder {
+    color: $palette-trueGray-500;
+  }
+}
+
+textarea {
+  border: 1px solid $palette-trueGray-200;
+  color: $palette-trueGray-900;
+  margin: 0;
+  text-decoration: none;
+  border-radius: $base-border-radius;
+  cursor: pointer;
+  display: flex;
+  padding: 0.5em;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $palette-indigo-400;
+    border-radius: $base-border-radius;
+  }
+
+  &::-webkit-input-placeholder {
+    /* Edge */
+    color: $palette-trueGray-500;
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $palette-trueGray-500;
+  }
+
+  &::placeholder {
+    color: $palette-trueGray-500;
+  }
+}
+
+label {
+  display: block;
+  color: $palette-trueGray-700;
+  margin-bottom: 0.25em;
+}

@@ -1,0 +1,69 @@
+import React, { Component } from "react";
+import { NavLink, Link } from "react-router-dom";
+import mohLogo from "img/moh-logo.png";
+import mohLogoHorizontal from "img/moh-logo-horizontal.png";
+import vaccineLogin from "img/vaccine-login.svg";
+import researchLogin from "img/research-login.svg";
+import backgroundWave from "img/background-wave.svg";
+import "./Login.scss";
+
+class Login extends Component {
+  render() {
+    return (
+      <div className="login-page-container">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="moh-logo">
+                <img src={mohLogoHorizontal} />
+              </div>
+
+              <h1>Registration</h1>
+              <h2>Covid-19 Vaccination</h2>
+            </div>
+          </div>
+        </div>
+        <div className="no-container">
+          <div className="card">
+            <div className="container">
+              <div className="row">
+                <div className="col-12">
+                  <div className="researchLogin">
+                    <img src={researchLogin} />
+                  </div>
+                  <form>
+                    <div className="input-group">
+                      <label>Registration ID</label>
+                      <div className="caption">
+                        Enter the 6 digit code sent by SMS
+                      </div>
+                      <input type="text"></input>
+                    </div>
+                    <div className="input-group">
+                      <label>NRIC/FIN</label>
+                      <input type="text"></input>
+                    </div>
+                    <button className="btn btn-primary btn-block">
+                      {" "}
+                      <Link to="/screener">Login</Link>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-12"></div>
+          </div>
+        </div>
+        <div className="background-wave">
+          <img src={backgroundWave} />
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Login;

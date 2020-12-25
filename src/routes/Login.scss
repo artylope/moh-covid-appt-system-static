@@ -1,0 +1,46 @@
+@import "styles/styles.scss";
+
+.login-page-container {
+  padding-top: 2em;
+  padding-bottom: 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: $palette-trueGray-050;
+
+  h1 {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    // text-align: center;
+  }
+
+  .moh-logo {
+    width: 220px;
+    // margin: 0 auto;
+    margin-bottom: 2em;
+    img {
+      width: 100%;
+    }
+  }
+
+  .researchLogin {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    img {
+      width: 100%;
+    }
+  }
+
+  .card {
+    margin-top: 2em;
+    margin-bottom: 3em;
+  }
+
+  form {
+    button {
+      margin-top: 2em;
+    }
+  }
+}
