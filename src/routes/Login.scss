@@ -30,8 +30,10 @@
     }
   }
 
-  .researchLogin {
+  .login-image {
     max-width: 700px;
+    padding-left: 1em;
+    padding-right: 1em;
     margin: 0 auto;
     margin-bottom: 2em;
     img {
@@ -47,6 +49,18 @@
   form {
     button {
       margin-top: 2em;
+    }
+  }
+
+  .container {
+    .row {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media screen and (min-width: 769px) {
+    .login-image {
+      margin-bottom: 0;
     }
   }
 }

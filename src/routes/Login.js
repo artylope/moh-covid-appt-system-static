@@ -27,21 +27,23 @@ class Login extends Component {
           <div className="card">
             <div className="container">
               <div className="row">
-                <div className="col-12">
-                  <div className="researchLogin">
+                <div className="col-sm-12 col-md-12 col-lg-6">
+                  <div className="login-image">
                     <img src={vaccineLogin} />
                   </div>
+                </div>
+                <div className="col-sm-12 col-md-12 col-lg-6">
                   <form>
                     <div className="input-group">
                       <label>Registration ID</label>
                       <div className="caption">
                         Enter the 6 digit code sent by SMS
                       </div>
-                      <input type="text"></input>
+                      <input type="text" placeholder="123456"></input>
                     </div>
                     <div className="input-group">
                       <label>NRIC/FIN</label>
-                      <input type="text"></input>
+                      <input type="text" placeholder="S1234567A"></input>
                     </div>
                     <button className="btn btn-primary btn-block">
                       {" "}

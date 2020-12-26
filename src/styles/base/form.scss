@@ -7,8 +7,8 @@
   }
 
   .caption {
-    margin-bottom: 0.25em;
-    color: $palette-trueGray-500;
+    margin-bottom: 0.5em;
+    color: $palette-trueGray-600;
   }
 
   .validation {
@@ -38,7 +38,7 @@ input[number],
 select {
   width: 100%;
   // border: 1px solid $palette-trueGray-200;
-  border: 1px solid $palette-trueGray-200;
+  border: 2px solid $palette-trueGray-300;
   // background: $palette-trueGray-100;
   color: $palette-trueGray-900;
   margin: 0;
@@ -46,14 +46,14 @@ select {
   text-decoration: none;
   border-radius: $base-border-radius;
   cursor: pointer;
-  height: 40px;
+  height: 56px;
   display: flex;
   padding-left: 0.5em;
   padding-right: 0.5em;
 
   &:focus {
     outline: none;
-    border: 1px solid $palette-indigo-400;
+    border: 2px solid $palette-indigo-400;
     border-radius: $base-border-radius;
   }
 
@@ -73,7 +73,7 @@ select {
 }
 
 textarea {
-  border: 1px solid $palette-trueGray-200;
+  border: 2px solid $palette-trueGray-200;
   color: $palette-trueGray-900;
   margin: 0;
   text-decoration: none;

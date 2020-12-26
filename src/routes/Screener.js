@@ -8,6 +8,7 @@ class Screener extends Component {
     return (
       <div className="screener-page-container">
         <div className="app-header-container">Health Questionaire</div>
+        <div className="progress-checker-container">d</div>
         <Link to="/vaccine-info">Vaccine Info</Link>
         <br />
         <Link to="/booking-form">Check Eligibility</Link>
