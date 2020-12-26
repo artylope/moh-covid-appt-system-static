@@ -5,6 +5,11 @@ import mohLogoHorizontal from "img/moh-logo-horizontal.png";
 import vaccineLogin from "img/vaccine-login.svg";
 import researchLogin from "img/research-login.svg";
 import backgroundWave from "img/background-wave.svg";
+
+import { ReactComponent as IconClear } from "img/icons/bx-x.svg";
+import { ReactComponent as IconIdCard } from "img/icons/bx-id-card.svg";
+import { ReactComponent as IconLock } from "img/icons/bx-lock-alt.svg";
+
 import "./Login.scss";
 
 class Login extends Component {
@@ -39,11 +44,35 @@ class Login extends Component {
                       <div className="caption">
                         Enter the 6 digit code sent by SMS
                       </div>
-                      <input type="text" placeholder="123456"></input>
+                      <div className="input-field">
+                        <div className="input-icon-left">
+                          <IconLock />
+                        </div>
+                        <input
+                          type="text"
+                          placeholder="S1234567A"
+                          disabled
+                        ></input>
+
+                        {/* <div className="input-icon-right">
+                          {" "}
+                          <IconClear />
+                        </div> */}
+                      </div>
                     </div>
                     <div className="input-group">
                       <label>NRIC/FIN</label>
-                      <input type="text" placeholder="S1234567A"></input>
+
+                      <div className="input-field">
+                        <div className="input-icon-left">
+                          <IconIdCard />
+                        </div>
+                        <input type="text" placeholder="S1234567A"></input>
+                        <div className="input-icon-right">
+                          {" "}
+                          <IconClear />
+                        </div>
+                      </div>
                     </div>
                     <button className="btn btn-primary btn-block">
                       {" "}

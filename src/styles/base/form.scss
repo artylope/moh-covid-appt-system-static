@@ -110,3 +110,37 @@ label {
   color: $palette-trueGray-700;
   margin-bottom: 0.25em;
 }
+
+.input-field {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  align-items: center;
+
+  .input-icon-left {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 1em;
+    svg {
+      fill: $palette-coolGray-500;
+    }
+  }
+  input {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+  .input-icon-right {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 1em;
+
+    svg {
+      fill: $palette-coolGray-500;
+    }
+  }
+}
