@@ -1,0 +1,10 @@
+.progress-checker-container {
+  background: $palette-indigo-900;
+  height: 300px;
+  border-radius: $base-border-radius * 3;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

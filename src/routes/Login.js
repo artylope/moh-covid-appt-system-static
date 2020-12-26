@@ -15,7 +15,7 @@ class Login extends Component {
           <div className="row">
             <div className="col-12">
               <div className="moh-logo">
-                <img src={mohLogoHorizontal} />
+                <img src={mohLogo} />
               </div>
 
               <h1>Registration</h1>
@@ -29,7 +29,7 @@ class Login extends Component {
               <div className="row">
                 <div className="col-12">
                   <div className="researchLogin">
-                    <img src={researchLogin} />
+                    <img src={vaccineLogin} />
                   </div>
                   <form>
                     <div className="input-group">
@@ -45,7 +45,7 @@ class Login extends Component {
                     </div>
                     <button className="btn btn-primary btn-block">
                       {" "}
-                      <Link to="/screener">Login</Link>
+                      <Link to="/screener">Get Started</Link>
                     </button>
                   </form>
                 </div>

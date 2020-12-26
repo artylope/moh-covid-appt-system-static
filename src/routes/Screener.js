@@ -7,17 +7,10 @@ class Screener extends Component {
   render() {
     return (
       <div className="screener-page-container">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <h1>Screener</h1>
-
-              <Link to="/vaccine-info">Vaccine Info</Link>
-              <br />
-              <Link to="/booking-form">Check Eligibility</Link>
-            </div>
-          </div>
-        </div>
+        <div className="app-header-container">Health Questionaire</div>
+        <Link to="/vaccine-info">Vaccine Info</Link>
+        <br />
+        <Link to="/booking-form">Check Eligibility</Link>
       </div>
     );
   }
