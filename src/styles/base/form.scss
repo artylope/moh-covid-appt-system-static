@@ -24,13 +24,34 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 2rem;
 
   input[type="password"],
   input[type="text"],
   input[number],
   select {
     margin-right: 0.2em;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    appearance: none;
+    display: flex;
+    border-radius: 3px;
+    flex: 0 0 24px;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    // flex-basis: 24px;
+    margin-right: 0.5em;
+    margin-top: 0.1em;
+    border: 2px solid $palette-trueGray-300;
+    cursor: pointer;
+  }
+
+  label {
+    cursor: pointer;
   }
 }
 
@@ -50,6 +71,7 @@ select {
   cursor: pointer;
   height: 56px;
   display: flex;
+
   padding-left: 0.5em;
   padding-right: 0.5em;
 
@@ -124,8 +146,15 @@ label {
     justify-content: center;
     align-items: center;
     left: 1em;
+
     svg {
-      fill: $palette-coolGray-500;
+      fill: $palette-coolGray-400;
+    }
+
+    &.disabled {
+      svg {
+        fill: $palette-trueGray-300;
+      }
     }
   }
   input {

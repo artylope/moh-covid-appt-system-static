@@ -45,7 +45,7 @@ class Login extends Component {
                         Enter the 6 digit code sent by SMS
                       </div>
                       <div className="input-field">
-                        <div className="input-icon-left">
+                        <div className="input-icon-left disabled">
                           <IconLock />
                         </div>
                         <input
@@ -84,11 +84,7 @@ class Login extends Component {
             </div>
           </div>
         </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-12"></div>
-          </div>
-        </div>
+
         <div className="background-wave">
           <img src={backgroundWave} />
         </div>
